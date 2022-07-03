@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <form action="" class="form" id="form">
+                <div class="form-control">
+                    <label for="">User Name</label>
+                    <input type="text" placeholder="Enter Username" class="username" id="username">
+                </div>
+                <div class="form-control">
+                    <label for="">E-Mail</label>
+                    <input type="email" placeholder="Enter E-mail" class="email" id="email">
+                </div><div class="form-control">
+                    <label for="">Password</label>
+                    <input type="password" placeholder="Enter password" class="password" id="password">
+                </div>
+                <button type="submit">submit</button>
+            </form>
+        </div>
+        <script>
+            const form = document.getElementById("form");
+            const form = document.getElementById("username");
+            const form = document.getElementById("email");
+            const form = document.getElementById("password");
+            form.addEventListener('submit', e =>{
+                e.preventDefault();
+                checkinput();
+            });
+            function checkinput(){
+                const usernamevalue = username.value.trim();
+                const passwordvalue = password.value.tim();
+                const emailvalue = email.value.tim();
+                if(usernamevalue === ''){
+                    setError(username, 'the field is mandatory');
+                }
+                else{
+                    setSuccess(username);
+                }
+                if(emailvalue === ''){
+                    setError(email, 'the field is mandatory');
+                }
+            }
+        </script>
+    </body>
+</html>
