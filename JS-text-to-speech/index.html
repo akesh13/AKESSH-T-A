@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js-Text-To-Speech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="heading">Text to speech using <span>Javascript</span></h1>
+    <!-- <div class="container">
+            <textarea name="" id="" cols="50" rows="10" class="enter_text" placeholder="Enter text to speech" contenteditable></textarea>
+            <button class="speak_btn">speak</button>
+    </div> -->
+<div class="container">
+    <textarea id="text" cols="50" rows="10" placeholder="Enter text to speech"></textarea>
+   <div class="button">
+    <input type="number" name="speed" id="speed" min=".5" max="3" stop=".5" value="1">
+    <button id="play-button">Play</button>
+    <button id="pause-button">pause</button>
+    <button id="stop-button">stop</button>
+   </div>
+</div>
+
+
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>
